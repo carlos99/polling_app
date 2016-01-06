@@ -1,0 +1,20 @@
+%div.container
+  %p#notice= notice
+
+  %p
+    %b Title:
+    = @poll.title
+
+  = link_to 'Edit', edit_poll_path(@poll)
+  \|
+  = link_to 'Back', polls_path
+
+  = link_to 'Add Question', new_poll_question_path(@poll), class: "btn btn-default"
+
+  %hr
+
+  %h2 Questions
+
+  %div
+    -@poll.questions.each do |question|
+      %li=question.title

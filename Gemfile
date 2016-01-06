@@ -9,6 +9,7 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'haml-rails'
 gem 'pry-rails'
 
+gem 'html2haml'
 gem 'bootstrap-sass'
 gem 'jquery-rails'
 gem 'turbolinks'
